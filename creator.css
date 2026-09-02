@@ -1,0 +1,102 @@
+.creator-page {
+  background: var(--sky);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.creator-page .site-header {
+  background: #ffffffdd;
+}
+
+.creator-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.creator-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.creator-card h1 {
+  color: var(--navy);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 2rem;
+}
+
+.creator-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.creator-card .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--sky);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  transition: .2s;
+}
+
+.creator-card .contact-item:hover {
+  background: #f6fbff;
+  transform: translateY(-2px);
+}
+
+.creator-card .icon {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 12px;
+  color: var(--blue);
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(10,58,97,.05);
+}
+
+.creator-card .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.creator-card .details small {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-bottom: 0.2rem;
+}
+
+.creator-card .details a {
+  color: var(--navy);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.creator-card .details a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.creator-card .actions {
+  justify-content: center;
+}
+
+@media (max-width: 780px) {
+  .creator-card {
+    padding: 2rem;
+  }
+}
